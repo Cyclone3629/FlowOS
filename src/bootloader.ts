@@ -120,7 +120,7 @@ try {
 } catch (e) {
   writeln()
   writeln('An error occured while booting FlowOS.')
-  writeln('Please report this error to Flow Works.')
+  writeln('Please report this error.')
   writeln()
   console.error(e.stack)
   writeln()
