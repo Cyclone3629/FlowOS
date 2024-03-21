@@ -70,7 +70,7 @@ export default class Kernel {
   async boot (boot: HTML, progress: HTML, args: URLSearchParams): Promise<void> {
     progress.style({ width: '0%' })
     const bootArgs = args.toString().replace(/=($|&)/g, '=true ')
-    console.log(`FlowOS - v${pkg.version}, Flow Works (c) ${new Date().getFullYear()}`)
+    console.log(`FlowOS - v${pkg.version}, Flow OS (c) ${new Date().getFullYear()}`)
     console.log()
     console.log(`User Agent : ${navigator.userAgent}`)
     console.log(`Boot Args  : ${bootArgs === '' ? 'None' : bootArgs}`)
