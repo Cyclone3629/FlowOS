@@ -52,12 +52,12 @@ const Info: Process = {
         ),
         new HTML('br'),
         new HTML('a').text('Discord').attr({
-          href: 'https://discord.gg/86F8dK9vfn',
+          href: 'https://notavailable.com',
           class: 'discord'
         }),
         new HTML('span').text(' - '),
         new HTML('a').text('Github').attr({
-          href: 'https://github.com/Flow-Works/FlowOS',
+          href: 'https://github.com/Cyclone3629/FlowOS',
           class: 'github'
         })
       )
