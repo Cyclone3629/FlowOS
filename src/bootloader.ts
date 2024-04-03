@@ -116,12 +116,12 @@ window.console.group = (...args: any) => {
 try {
   const args = new URLSearchParams(window.location.search)
   const kernel = new Kernel()
-  writeln('/----------------------------------------------------\\')
-  writeln('| FlowOS is ready. Continuing to bootloader in 10s...|')
-  writeln('\\----------------------------------------------------/')
+  writeln('/----------------------------------------------\\')
+  writeln('| FlowOS is ready. Continuing to bootloader...|')
+  writeln('\\----------------------------------------------/')
   setTimeout(() => {
     kernel.boot(boot, progress, args).catch(e => console.error(e))
-  }, 10000)
+  }, 1000)
 } catch (e) {
   writeln()
   writeln('An error occured while booting FlowOS.')
